@@ -1,0 +1,23 @@
+---
+  root: true
+  extends: airbnb-base
+  globals:
+    grammar: true
+    token: true
+    choice: true
+    repeat: true
+    repeat1: true
+    seq: true
+    blank: true
+    alias: true
+    optional: true
+    prec: true
+    $: true
+  rules:
+    no-unused-vars:
+      - error
+      - argsIgnorePattern: \$
+    camelcase:
+      - off
+    no-underscore-dangle:
+      - off
